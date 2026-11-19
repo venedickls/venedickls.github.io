@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venedick Sapongay · BI Engineer</title>
+<meta name="description" content="Venedick Sapongay is a Business Intelligence and ETL engineer with 7+ years in Snowflake, SSIS, Power BI and AWS, using generative AI every day in production BI work. Open to remote roles.">
+<meta property="og:title" content="Venedick Sapongay · Business Intelligence Engineer">
+<meta property="og:description" content="7+ years in BI and data warehousing. Snowflake, SSIS, Power BI, AWS. AI-augmented analytics. Open to remote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230f766e'/><text x='16' y='22' font-family='Arial' font-size='15' font-weight='700' fill='white' text-anchor='middle'>VS</text></svg>">
+<style>
+  :root {
+    --bg: #fafaf9; --surface: #ffffff; --text: #1c1917; --muted: #57534e; --faint: #a8a29e;
+    --border: #e7e5e4; --accent: #0f766e; --accent-soft: #ccfbf1; --accent-text: #115e59;
+    --chip: #f5f5f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0c0a09; --surface: #1c1917; --text: #f5f5f4; --muted: #a8a29e; --faint: #78716c;
+      --border: #292524; --accent: #2dd4bf; --accent-soft: #134e4a; --accent-text: #99f6e4; --chip: #292524;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0c0a09; --surface: #1c1917; --text: #f5f5f4; --muted: #a8a29e; --faint: #78716c;
+    --border: #292524; --accent: #2dd4bf; --accent-soft: #134e4a; --accent-text: #99f6e4; --chip: #292524;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+
+  nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; gap: 12px; }
+  .brand { font-weight: 700; color: var(--text); }
+  .links { display: flex; gap: 18px; align-items: center; font-size: 14px; }
+  .links a { color: var(--muted); }
+  .links a:hover { color: var(--text); text-decoration: none; }
+  .theme-btn { background: none; border: 1px solid var(--border); color: var(--muted); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; font-size: 15px; }
+  @media (max-width: 640px) { .links a.hide-sm { display: none; } }
+
+  header.hero { padding: 72px 0 48px; }
+  .status { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: var(--accent-text); background: var(--accent-soft); padding: 4px 12px; border-radius: 999px; }
+  .status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+  h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.1; letter-spacing: -0.02em; margin: 18px 0 10px; }
+  .role { font-size: clamp(18px, 2.6vw, 22px); color: var(--muted); margin: 0 0 20px; font-weight: 500; }
+  .lede { max-width: 680px; color: var(--muted); font-size: 17px; margin: 0 0 28px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 10px; font-weight: 600; font-size: 15px; border: 1px solid var(--border); color: var(--text); background: var(--surface); }
+  .btn:hover { text-decoration: none; border-color: var(--accent); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 8px 0 0; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+  .stat b { display: block; font-size: 26px; letter-spacing: -0.02em; }
+  .stat span { font-size: 13px; color: var(--muted); }
+  @media (max-width: 640px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+
+  section { padding: 56px 0 8px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .12em; color: var(--faint); margin: 0 0 6px; font-weight: 600; }
+  h3.title { font-size: 26px; letter-spacing: -0.01em; margin: 0 0 24px; }
+
+  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  @media (max-width: 720px) { .cards { grid-template-columns: 1fr; } }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+  .card h4 { margin: 0 0 6px; font-size: 17px; }
+  .card p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font: 500 12px/1 "JetBrains Mono", monospace; background: var(--chip); color: var(--muted); padding: 5px 8px; border-radius: 6px; }
+  .card.feature { grid-column: 1 / -1; border-color: var(--accent); }
+
+  .timeline { border-left: 2px solid var(--border); margin-left: 6px; }
+  .job { position: relative; padding: 0 0 30px 24px; }
+  .job::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); }
+  .job-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .job h4 { margin: 0; font-size: 17px; }
+  .job .org { color: var(--muted); font-size: 15px; }
+  .job .when { font: 13px "JetBrains Mono", monospace; color: var(--faint); white-space: nowrap; }
+  .job ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); font-size: 15px; }
+  .job li { margin-bottom: 4px; }
+
+  .skills { display: grid; grid-template-columns: 200px 1fr; gap: 14px 20px; }
+  .skills dt { font-weight: 600; font-size: 15px; }
+  .skills dd { margin: 0; }
+  @media (max-width: 640px) { .skills { grid-template-columns: 1fr; gap: 4px; } .skills dd { margin-bottom: 12px; } }
+
+  .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; text-align: center; margin-bottom: 56px; }
+  .contact-box p { color: var(--muted); max-width: 520px; margin: 0 auto 20px; }
+  .contact-box .cta { justify-content: center; }
+  footer { border-top: 1px solid var(--border); padding: 24px 0 40px; color: var(--faint); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">Venedick Sapongay</a>
+    <div class="links">
+      <a href="#ai" class="hide-sm">AI work</a>
+      <a href="#experience" class="hide-sm">Experience</a>
+      <a href="#skills" class="hide-sm">Skills</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle color theme">◐</button>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap">
+  <header class="hero">
+    <span class="status">Open to remote roles</span>
+    <h1>Venedick Sapongay</h1>
+    <p class="role">Business Intelligence Engineer · AI-Augmented Analytics · Snowflake / ETL / SQL</p>
+    <p class="lede">I build and migrate enterprise reporting and data warehouse systems, and I use generative AI every day to ship them faster and more reliably. I have 7+ years across cruise hospitality, banking, and lending, and I've worked remotely with teams in the US, Australia/New Zealand, and Latin America. Based in the Philippines.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:venedicklsapongay@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/venedicksapongay" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/venedickls" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b>7+ yrs</b><span>BI, ETL &amp; data warehousing</span></div>
+    <div class="stat"><b>200+</b><span>SSIS packages migrated, zero downtime</span></div>
+    <div class="stat"><b>1,900+</b><span>sailings in one reconciled report</span></div>
+    <div class="stat"><b>3 regions</b><span>US, AU/NZ, LATAM stakeholders</span></div>
+  </div>
+
+  <section id="ai">
+    <h2>Selected work</h2>
+    <h3 class="title">AI in production BI</h3>
+    <div class="cards">
+      <div class="card feature">
+        <h4>Crystal Reports automation proof-of-concept</h4>
+        <p>I designed and built a working app plus documentation that uses AI to automate Crystal Reports creation and edits, such as adding new columns. I also scoped the runtime dependency and drove the infrastructure request to get it into the team's environment.</p>
+        <div class="tags"><span class="tag">Claude</span><span class="tag">Crystal Reports</span><span class="tag">Automation</span></div>
+      </div>
+      <div class="card">
+        <h4>AI-assisted SQL modernization</h4>
+        <p>A repeatable pattern for converting legacy ODBC queries to Snowflake-native SQL. AI review flags risks like join fan-out and LEFT joins that silently become INNER joins before anything reaches production.</p>
+        <div class="tags"><span class="tag">Snowflake</span><span class="tag">SQL</span><span class="tag">Migration</span></div>
+      </div>
+      <div class="card">
+        <h4>Reservation-data investigations</h4>
+        <p>Structured Snowflake Cortex prompts and AI-parsed reservation-history XML to root-cause booking data defects. The work separated report fixes from source-data escalations and supported an audit of 98 records.</p>
+        <div class="tags"><span class="tag">Snowflake Cortex</span><span class="tag">XML</span><span class="tag">RCA</span></div>
+      </div>
+      <div class="card">
+        <h4>Python validation tooling</h4>
+        <p>Scripts built with AI help that parse report exports, match records by key, and hash rows to find differences. I used them to verify a production data fix by comparing exports before and after.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Data QA</span></div>
+      </div>
+      <div class="card">
+        <h4>AI adoption for the BI team</h4>
+        <p>I wrote the proposal to bring an AI assistant onto the team's virtual desktop, covering use cases, workflow fit, data-sensitivity handling, and the rollout plan for leadership.</p>
+        <div class="tags"><span class="tag">Enablement</span><span class="tag">Governance</span></div>
+      </div>
+      <div class="card">
+        <h4>Docs, trackers &amp; onboarding</h4>
+        <p>I turn meeting transcripts into interactive action-item trackers. I also generated a 19-slide onboarding deck from Confluence and training videos using AI connectors, and I keep SOPs and SQL template libraries up to date.</p>
+        <div class="tags"><span class="tag">MCP connectors</span><span class="tag">Confluence</span><span class="tag">Documentation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Career</h2>
+    <h3 class="title">Experience</h3>
+    <div class="timeline">
+      <div class="job">
+        <div class="job-head"><div><h4>Business Intelligence Engineer</h4><div class="org">All Systems Plus (Remote) · river-cruise client</div></div><span class="when">Dec 2025 – Now</span></div>
+        <ul>
+          <li>Lead migration of legacy Crystal Reports and SQL Server/Oracle reports to Snowflake and a new cruise reservation system.</li>
+          <li>Build booking and agent-performance reporting for US, AU/NZ, and LATAM teams. Built an air-uptake report covering 1,900+ sailings across 35 ships.</li>
+          <li>Use Claude and Snowflake Cortex daily for SQL, investigation, validation, and documentation.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><div><h4>SQL Developer (Data Warehouse Engineer)</h4><div class="org">Credit Corp Group · Makati, PH</div></div><span class="when">May 2024 – Nov 2025</span></div>
+        <ul>
+          <li>Migrated 200+ SSIS packages from SQL Server 2012 to 2022 with zero production downtime.</li>
+          <li>Built SSIS/T-SQL pipelines that automate credit-scoring logic, and tuned long-running ETL jobs.</li>
+          <li>Built Power BI monitoring for EDW jobs, and rebuilt SAS, Tableau, and SSRS reports in Power BI.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><div><h4>ETL Developer</h4><div class="org">Seven Seven Global Services (for a major PH bank) · Ortigas, PH</div></div><span class="when">Nov 2022 – Apr 2024</span></div>
+        <ul>
+          <li>Key ETL contributor on a large credit-card portfolio migration on AWS (S3, Glue, Lambda, Redshift).</li>
+          <li>Parsed ASCII, EBCDIC, DAT, and CSV feeds into Redshift for online banking, rewards, and wallet features.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><div><h4>Software Engineer</h4><div class="org">Ducen Infotek Inc. · Pasig, PH</div></div><span class="when">Aug 2019 – Oct 2022</span></div>
+        <ul>
+          <li>Built and led support for SSIS/SSRS data warehousing and reporting projects, and wrote C# file-parsing scripts.</li>
+          <li>Received the Customer Service Award in 2020.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Toolbox</h2>
+    <h3 class="title">Skills</h3>
+    <dl class="skills">
+      <dt>Generative AI</dt><dd><div class="tags"><span class="tag">Claude</span><span class="tag">Claude Code</span><span class="tag">Snowflake Cortex</span><span class="tag">Prompt engineering</span><span class="tag">MCP connectors</span></div></dd>
+      <dt>Data &amp; reporting</dt><dd><div class="tags"><span class="tag">Snowflake SQL</span><span class="tag">T-SQL</span><span class="tag">SSIS</span><span class="tag">SSRS</span><span class="tag">Crystal Reports</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Jasper</span></div></dd>
+      <dt>Cloud &amp; databases</dt><dd><div class="tags"><span class="tag">AWS Redshift</span><span class="tag">S3</span><span class="tag">Glue</span><span class="tag">Lambda</span><span class="tag">SQL Server</span><span class="tag">Oracle</span><span class="tag">Teradata</span></div></dd>
+      <dt>Programming</dt><dd><div class="tags"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">C#</span></div></dd>
+      <dt>Education</dt><dd style="color:var(--muted);font-size:15px">BS Information Technology, Cum Laude · Bulacan State University, 2019</dd>
+    </dl>
+  </section>
+
+  <section id="contact">
+    <div class="contact-box">
+      <h3 class="title" style="margin-bottom:10px">Let's work together</h3>
+      <p>I'm looking for remote BI, analytics engineering, or data warehouse roles, especially on teams that are putting AI to work in their data stack.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:venedicklsapongay@gmail.com">venedicklsapongay@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/venedicksapongay" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Venedick Sapongay</div></footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, key = "theme";
+    try { var saved = localStorage.getItem(key); if (saved) root.setAttribute("data-theme", saved); } catch (e) {}
+    document.getElementById("themeBtn").addEventListener("click", function () {
+      var cur = root.getAttribute("data-theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      var next = cur === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem(key, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
